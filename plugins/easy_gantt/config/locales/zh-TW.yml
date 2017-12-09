@@ -101,22 +101,22 @@ zh-TW:
   easy_query:
     name:
       easy_gantt_easy_issue_query: Easy Gantt
-  field_easy_gantt_default_zoom: Default zoom
-  field_easy_gantt_show_holidays: Show holidays
-  field_easy_gantt_show_project_progress: Show project progress
-  field_easy_gantt_show_task_soonest_start: Show soonest start
+  field_easy_gantt_default_zoom: 預設縮放
+  field_easy_gantt_show_holidays: 顯示假日
+  field_easy_gantt_show_project_progress: 顯示專案進度
+  field_easy_gantt_show_task_soonest_start: 顯示最快開始的任務
   field_keep_link_delay_in_drag: Constant link delay during drag
-  field_relation: Relation
+  field_relation: 關聯
   heading_delay_popup: Define delay in days
   heading_demo_feature_popup: Coming soon
   heading_easy_gantts_issues: Easy Gantt Free
   label_easy_gantt: Easy Gantt
-  label_easy_gantt_critical_path: Critical path
-  label_easy_gantt_settings: Gantt settings
-  label_filter_group_easy_gantt_easy_issue_query: Task fields
-  label_finish_to_finish: Finish to finish
-  label_start_to_finish: Start to finish
-  label_start_to_start: Start to start
+  label_easy_gantt_critical_path: 關鍵路徑
+  label_easy_gantt_settings: 甘特圖設定
+  label_filter_group_easy_gantt_easy_issue_query: 任務欄位
+  label_finish_to_finish: 結束到結束
+  label_start_to_finish: 開始到結束
+  label_start_to_start: 開始到開始
   link_easy_gantt_plugin: https://www.easyredmine.com/easy-gantt-upgrade-to-pro
   permission_edit_easy_gantt: Edit Easy Gantt & Resource Management on a project
   permission_edit_global_easy_gantt: Edit global Easy Gantt & Resource Management

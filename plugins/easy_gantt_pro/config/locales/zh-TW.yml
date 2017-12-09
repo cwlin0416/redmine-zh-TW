@@ -25,7 +25,7 @@ zh-TW:
       label_cashflow: 現金流
   easy_gantt:
     button:
-      show_lowest_progress_tasks: 顯示進度最差的工作
+      show_lowest_progress_tasks: 顯示進度最差的任務
     popup:
       add_task:
         heading: 新增議題說明
@@ -39,13 +39,13 @@ zh-TW:
         text: 專案中最長的活動順序，必須及時完成，以便項目在截止日期前完成。
           關鍵路徑上的活動只有在其前面的活動完成之後才能開始。如果延遲了一天，
           整個項目將被延遲一天，除非延遲活動之後的活動在前一天完成。
-          要讓關鍵路徑的功能可正確運行，專案應只有一個起點和一個終點工作，
-          且工作之間應使用關聯來聯繫。
+          要讓關鍵路徑的功能可正確運行，專案應只有一個起點和一個終點任務，
+          且任務之間應使用關聯來聯繫。
     scheme_by:
       label_by_priority: 依優先權
       label_by_status: 依狀態
       label_by_tracker: 依追蹤者
       label_color_by: Color by
   heading_easy_gantts_issues: Easy Gantt PRO
-  label_show_lowest_progress_tasks: 進度最差的工作
-  text_show_lowest_progress_tasks: 顯示進度日期最差的工作 (= 日期對應於甘特圖中的任務完成比率欄)
+  label_show_lowest_progress_tasks: 進度最差的任務
+  text_show_lowest_progress_tasks: 顯示進度日期最差的任務 (= 日期對應於甘特圖中的任務完成比率欄)
