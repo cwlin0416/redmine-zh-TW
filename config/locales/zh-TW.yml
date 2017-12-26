@@ -29,8 +29,8 @@
       time: "%H:%M"
       short: "%b%d 日 %H:%M"
       long: "%Y 年 %b%d 日 %H:%M"
-    am: "AM"
-    pm: "PM"
+    am: "上午"
+    pm: "下午"
 
   datetime:
     distance_in_words:
@@ -195,9 +195,9 @@
   general_pdf_monospaced_fontname: msungstdlight
   general_first_day_of_week: '7'
 
-  notice_account_updated: 帳戶更新資訊已儲存
-  notice_account_invalid_credentials: 帳戶或密碼不正確
-  notice_account_password_updated: 帳戶新密碼已儲存
+  notice_account_updated: 帳號更新資訊已儲存
+  notice_account_invalid_credentials: 帳號或密碼不正確
+  notice_account_password_updated: 帳號新密碼已儲存
   notice_account_wrong_password: 密碼不正確
   notice_account_register_done: 帳號已建立成功。欲啟用您的帳號，請點擊系統確認信函中的啟用連結。
   notice_account_unknown_email: 未知的使用者
@@ -220,7 +220,7 @@
   notice_api_access_key_reseted: 您的 API 存取金鑰已被重新設定。
   notice_failed_to_save_issues: "無法儲存 %{count} 問題到下列所選取的 %{total} 個項目中： %{ids}。"
   notice_failed_to_save_time_entries: "無法儲存 %{count} 個時間到下列所選取的 %{total} 個項目中： %{ids}。"
-  notice_failed_to_save_members: "成員儲存失敗: %{errors}."
+  notice_failed_to_save_members: "成員儲存失敗: %{errors}。"
   notice_no_issue_selected: "未選擇任何問題！請勾選您想要編輯的問題。"
   notice_account_pending: "您的帳號已經建立，正在等待管理員的審核。"
   notice_default_data_loaded: 預設組態已載入成功。
@@ -230,7 +230,7 @@
   notice_gantt_chart_truncated: "由於項目數量超過可顯示數量的最大值 (%{max})，故此甘特圖尾部已被截斷"
   notice_issue_successful_create: "問題 %{id} 已建立。"
   notice_issue_update_conflict: "當您正在編輯這個問題的時候，它已經被其他人搶先一步更新過。"
-  notice_account_deleted: "您的帳戶已被永久刪除。"
+  notice_account_deleted: "您的帳號已被永久刪除。"
   notice_user_successful_create: "已建立使用者 %{id}。"
   notice_new_password_must_be_different: 新舊密碼必須相異
   notice_import_finished: "已成功匯入所有的項目共 %{count} 個"
@@ -242,42 +242,42 @@
   error_scm_annotate: "項目不存在或項目無法被加上附註。"
   error_scm_annotate_big_text_file: 此項目無法被標註，因為它已經超過最大的文字檔大小。
   error_issue_not_found_in_project: '該問題不存在或不屬於此專案'
-  error_no_tracker_in_project: '此專案尚未指定問題類型。請檢查專案的設定資訊。'
+  error_no_tracker_in_project: '此專案尚未指定類型。請檢查專案的設定資訊。'
   error_no_default_issue_status: '尚未定義問題狀態的預設值。請您前往「管理」->「問題狀態」頁面，檢查相關組態設定。'
   error_can_not_delete_custom_field: 無法刪除自訂欄位
-  error_can_not_delete_tracker: "此問題類型已包含問題，無法被刪除。"
+  error_can_not_delete_tracker: "此類型已包含問題，無法被刪除。"
   error_can_not_remove_role: "此身份已被使用，無法將其刪除。"
   error_can_not_reopen_issue_on_closed_version: '分配給「已結束」版本的問題，無法再將其狀態變更為「進行中」'
   error_can_not_archive_project: 此專案無法被封存
   error_issue_done_ratios_not_updated: "問題完成率未更新。"
-  error_workflow_copy_source: '請選擇一個來源問題類型或身份'
-  error_workflow_copy_target: '請選擇一個 (或多個) 目的問題類型或身份'
+  error_workflow_copy_source: '請選擇一個來源類型或身份'
+  error_workflow_copy_target: '請選擇一個 (或多個) 目的類型或身份'
   error_unable_delete_issue_status: '無法刪除問題狀態'
   error_unable_to_connect: "無法連線至 (%{value}) "
   error_attachment_too_big: "這個檔案無法被上傳，因為它已經超過最大的檔案大小 (%{max_size})"
   error_session_expired: "您的工作階段已經過期。請重新登入。"
   warning_attachments_not_saved: "%{count} 個附加檔案無法被儲存。"
-  error_password_expired: "您的密碼已經過期或是管理員要求您變更密碼."
+  error_password_expired: "您的密碼已經過期或是管理員要求您變更密碼。"
   error_invalid_file_encoding: "這個檔案不是一個有效的 %{encoding} 編碼檔案"
   error_invalid_csv_file_or_settings: "這個檔案不是一個 CSV 檔案，或是未符合下面所列之設定值"
   error_can_not_read_import_file: "讀取匯入檔案時發生錯誤"
   error_attachment_extension_not_allowed: "附件之附檔名不允許使用 %{extension}"
   error_ldap_bind_credentials: "無效的 LDAP 帳號/密碼"
-  error_no_tracker_allowed_for_new_issue_in_project: "此專案沒有您可用來新增問題的問題類型"
-  error_no_projects_with_tracker_allowed_for_new_issue: "此問題類型沒有您可用來新增問題的專案"
+  error_no_tracker_allowed_for_new_issue_in_project: "此專案沒有您可用來新增問題的類型"
+  error_no_projects_with_tracker_allowed_for_new_issue: "此類型沒有您可用來新增問題的專案"
   error_move_of_child_not_possible: "子任務 %{child} 無法被移動至新的專案: %{errors}"
   error_cannot_reassign_time_entries_to_an_issue_about_to_be_deleted: "無法將時間花費重新分配給即將被刪除的問題"
   warning_fields_cleared_on_bulk_edit: "選取物件的變更將導致一個或多個欄位之內容值被自動刪除"
 
-  mail_subject_lost_password: 您的 Redmine 網站密碼
-  mail_body_lost_password: '欲變更您的 Redmine 網站密碼, 請點選以下鏈結:'
-  mail_subject_register: 啟用您的 Redmine 帳號
-  mail_body_register: '欲啟用您的 Redmine 帳號, 請點選以下鏈結:'
-  mail_body_account_information_external: "您可以使用 %{value} 帳號登入 Redmine 網站。"
-  mail_body_account_information: 您的 Redmine 帳號資訊
-  mail_subject_account_activation_request: Redmine 帳號啟用需求通知
-  mail_body_account_activation_request: "有位新使用者 (%{value}) 已經完成註冊，正等候您的審核："
-  mail_subject_reminder: "您有 %{count} 個問題即將到期 (%{days})"
+  mail_subject_lost_password: "您的 %{value} 網站密碼"
+  mail_body_lost_password: '欲變更您的密碼請點選以下連結：'
+  mail_subject_register: "啟用您的 %{value} 帳號"
+  mail_body_register: '欲啟用您的帳號請點選以下鏈結：'
+  mail_body_account_information_external: "您可以使用 %{value} 帳號登入。"
+  mail_body_account_information: 您的帳號資訊
+  mail_subject_account_activation_request: "%{value} 帳號啟用請求"
+  mail_body_account_activation_request: "有位新使用者 (%{value}) 已註冊完成，該帳號正等候您審核："
+  mail_subject_reminder: "您有 %{count} 個問題將在未來 %{days} 天內到期"
   mail_body_reminder: "%{count} 個分配給您的問題，將於 %{days} 天之內到期："
   mail_subject_wiki_content_added: "'%{id}' wiki 頁面已被新增"
   mail_body_wiki_content_added: "此 '%{id}' wiki 頁面已被 %{author} 新增。"
@@ -288,10 +288,10 @@
   mail_body_security_notification_change_to: "%{field} 已變更為 %{value}。"
   mail_body_security_notification_add: "%{field} %{value} 已新增。"
   mail_body_security_notification_remove: "%{field} %{value} 已移除。"
-  mail_body_security_notification_notify_enabled: "電子郵件地址 %{value} 已開始接收通知。"
-  mail_body_security_notification_notify_disabled: "電子郵件地址 %{value} 已不再接收通知。"
-  mail_body_settings_updated: "下列設定已變更："
-  mail_body_password_updated: "您的密碼已變更。"
+  mail_body_security_notification_notify_enabled: "電子郵件地址 %{value} 現在會收到通知。"
+  mail_body_security_notification_notify_disabled: "電子郵件地址 %{value} 將不會再收到通知。"
+  mail_body_settings_updated: "已變更下列設定："
+  mail_body_password_updated: "已變更您的密碼。"
 
   field_name: 名稱
   field_description: 描述
@@ -301,17 +301,17 @@
   field_lastname: 姓氏
   field_mail: 電子郵件
   field_address: 電子郵件地址
-  field_filename: 檔案名稱
+  field_filename: 檔案
   field_filesize: 大小
-  field_downloads: 下載次數
+  field_downloads: 下載數
   field_author: 作者
   field_created_on: 建立日期
   field_updated_on: 更新日期
   field_closed_on: 結束日期
   field_field_format: 格式
-  field_is_for_all: 給全部的專案
+  field_is_for_all: 給全部專案
   field_possible_values: 可能值
-  field_regexp: 正規表示式
+  field_regexp: 正規表示法
   field_min_length: 最小長度
   field_max_length: 最大長度
   field_value: 值
@@ -323,12 +323,12 @@
   field_notes: 筆記
   field_is_closed: 問題已結束
   field_is_default: 預設值
-  field_tracker: 問題類型
+  field_tracker: 類型
   field_subject: 主旨
-  field_due_date: 完成日期
+  field_due_date: 到期日
   field_assigned_to: 負責人
   field_priority: 優先權
-  field_fixed_version: 版本
+  field_fixed_version: 目標版本
   field_user: 使用者
   field_principal: 原則
   field_role: 身份
@@ -336,169 +336,169 @@
   field_is_public: 公開
   field_parent: 父專案
   field_is_in_roadmap: 問題顯示於版本藍圖中
-  field_login: 帳戶名稱
-  field_mail_notification: 電子郵件提醒選項
+  field_login: 登入
+  field_mail_notification: 電子郵件通知
   field_admin: 管理者
-  field_last_login_on: 最近連線日期
+  field_last_login_on: 上次連線
   field_language: 語言
   field_effective_date: 日期
   field_password: 目前密碼
   field_new_password: 新密碼
   field_password_confirmation: 確認新密碼
   field_version: 版本
-  field_type: Type
-  field_host: Host
+  field_type: 類型
+  field_host: 主機
   field_port: 連接埠
-  field_account: 帳戶
+  field_account: 帳號
   field_base_dn: Base DN
   field_attr_login: 登入屬性
   field_attr_firstname: 名字屬性
   field_attr_lastname: 姓氏屬性
   field_attr_mail: 電子郵件信箱屬性
-  field_onthefly: 即時建立使用者
+  field_onthefly: 立即建立使用者
   field_start_date: 開始日期
   field_done_ratio: 完成率
   field_auth_source: 認證模式
   field_hide_mail: 隱藏我的電子郵件
   field_comments: 評論
   field_url: 網址
-  field_start_page: 首頁
+  field_start_page: 起始頁
   field_subproject: 子專案
   field_hours: 小時
   field_activity: 活動
   field_spent_on: 日期
-  field_identifier: 代碼
+  field_identifier: 辨識代號
   field_is_filter: 用來作為篩選條件
-  field_issue_to: 相關問題
+  field_issue_to: 相關的問題
   field_delay: 逾期
-  field_assignable: 問題可被分配至此身份
+  field_assignable: 問題可被分配到此身份
   field_redirect_existing_links: 重新導向現有連結
-  field_estimated_hours: 預估時間
+  field_estimated_hours: 預估時數
   field_column_names: 欄位
   field_time_entries: 記錄時間
   field_time_zone: 時區
-  field_searchable: 可用做搜尋條件
+  field_searchable: 可搜尋
   field_default_value: 預設值
-  field_comments_sorting: 評論排序
+  field_comments_sorting: 顯示評論
   field_parent_title: 父頁面
   field_editable: 可編輯
   field_watcher: 監視者
   field_identity_url: OpenID 網址
   field_content: 內容
-  field_group_by: 結果分組方式
+  field_group_by: 搜尋結果分組依據
   field_sharing: 共用
-  field_parent_issue: 父問題
+  field_parent_issue: 父任務
   field_member_of_group: "負責人的群組"
   field_assigned_to_role: "負責人的身份"
-  field_text: 內容文字
-  field_visible: 可被看見
-  field_warn_on_leaving_unsaved: "提醒我將要離開的頁面中尚有未儲存的資料"
+  field_text: 文字欄位
+  field_visible: 可檢視
+  field_warn_on_leaving_unsaved: "離開頁面有未儲存文字時提醒我"
   field_issues_visibility: 問題顯示
   field_is_private: 私有
   field_commit_logs_encoding: 提交訊息編碼
   field_scm_path_encoding: 路徑編碼
   field_path_to_repository: 檔案庫路徑
-  field_root_directory: 根資料夾
+  field_root_directory: 根目錄
   field_cvsroot: CVSROOT
   field_cvs_module: 模組
   field_repository_is_default: 主要檔案庫
   field_multiple: 多重值
   field_auth_source_ldap_filter: LDAP 篩選器
   field_core_fields: 標準欄位
-  field_timeout: "逾時 (單位: 秒)"
-  field_board_parent: 父論壇
+  field_timeout: "逾時 (秒)"
+  field_board_parent: 父討論區
   field_private_notes: 私有筆記
-  field_inherit_members: 繼承父專案成員
+  field_inherit_members: 繼承成員
   field_generate_password: 產生密碼
   field_must_change_passwd: 必須在下次登入時變更密碼
   field_default_status: 預設狀態
   field_users_visibility: 使用者顯示
   field_time_entries_visibility: 時間記錄顯示
-  field_total_estimated_hours: 預估時間總計
+  field_total_estimated_hours: 預估時數總計
   field_default_version: 預設版本
   field_remote_ip: IP 位址
   field_textarea_font: 文字區域使用的字型
   field_updated_by: 更新者
   field_last_updated_by: 上次更新者
   field_full_width_layout: 全寬度式版面配置
-  field_digest: 總和檢查碼
+  field_digest: 檢查碼
   field_default_assigned_to: 預設負責人
 
-  setting_app_title: 標題
-  setting_app_subtitle: 副標題
+  setting_app_title: 系統標題
+  setting_app_subtitle: 系統副標題
   setting_welcome_text: 歡迎詞
   setting_default_language: 預設語言
-  setting_login_required: 需要驗證
-  setting_self_registration: 註冊選項
+  setting_login_required: 需要認証
+  setting_self_registration: 自行註冊
   setting_show_custom_fields_on_registration: 註冊時顯示自訂欄位
-  setting_attachment_max_size: 附件大小限制
+  setting_attachment_max_size: 附件大小上限
   setting_issues_export_limit: 問題匯出限制
   setting_mail_from: 寄件者電子郵件
-  setting_bcc_recipients: 使用密件副本 (BCC)
+  setting_bcc_recipients: 密件副本 (BCC)
   setting_plain_text_mail: 純文字郵件 (不含 HTML)
-  setting_host_name: 主機名稱
+  setting_host_name: 主機名稱與路徑
   setting_text_formatting: 文字格式
-  setting_wiki_compression: 壓縮 Wiki 歷史文章
-  setting_feeds_limit: Atom 新聞限制
+  setting_wiki_compression: 壓縮 Wiki 歷史
+  setting_feeds_limit: Atom feed 項目上限
+  setting_default_projects_public: 新專案預設為「公開」
   setting_autofetch_changesets: 自動擷取提交
-  setting_default_projects_public: 新建立之專案預設為「公開」
-  setting_sys_api_enabled: 啟用管理檔案庫的網頁服務 (Web Service)
-  setting_commit_ref_keywords: 提交用於參照之關鍵字
-  setting_commit_fix_keywords: 提交用於修正之關鍵字
+  setting_sys_api_enabled: 開啟檔案庫管理 WS
+  setting_commit_ref_keywords: 參照的關鍵字
+  setting_commit_fix_keywords: 修正的關鍵字
   setting_autologin: 自動登入
   setting_date_format: 日期格式
   setting_time_format: 時間格式
-  setting_timespan_format: 時間範圍格式
-  setting_cross_project_issue_relations: 允許關聯至其它專案的問題
-  setting_cross_project_subtasks: 允許跨專案的子任務
+  setting_timespan_format: 時段格式
+  setting_cross_project_issue_relations: 允許跨專案關聯問題
+  setting_cross_project_subtasks: 允許跨專案開立子任務
   setting_issue_list_default_columns: 預設顯示於問題清單的欄位
-  setting_repositories_encodings: 附加檔案與檔案庫的編碼
-  setting_emails_header: 電子郵件前頭說明
-  setting_emails_footer: 電子郵件附帶說明
-  setting_protocol: 協定
-  setting_per_page_options: 每頁顯示個數選項
+  setting_repositories_encodings: 附件與檔案庫的編碼
+  setting_emails_header: 電子郵件頁首
+  setting_emails_footer: 電子郵件頁尾
+  setting_protocol: 通訊協定
+  setting_per_page_options: 每頁顯示項目數選項
   setting_user_format: 使用者顯示格式
   setting_activity_days_default: 專案活動顯示天數
-  setting_display_subprojects_issues: 預設於父專案中顯示子專案的問題
+  setting_display_subprojects_issues: 預設於父專案顯示子專案的問題
   setting_enabled_scm: 開啟的 SCM
   setting_mail_handler_body_delimiters: "截去郵件中包含下列值之後的內容"
-  setting_mail_handler_enable_regex_delimiters: "開啟規則運算式"
-  setting_mail_handler_api_enabled: 開啟處理傳入電子郵件的服務
-  setting_mail_handler_api_key: 傳入電子郵件網頁服務 API 金鑰
-  setting_sys_api_key: 檔案庫管理網頁服務 API 金鑰
-  setting_sequential_project_identifiers: 循序產生專案識別碼
-  setting_gravatar_enabled: 開啟 Gravatar 全球認證大頭像
-  setting_gravatar_default: 預設全球認證大頭像圖片
-  setting_diff_max_lines_displayed: 差異顯示行數之最大值
-  setting_file_max_size_displayed: 檔案內容顯示大小之最大值
-  setting_repository_log_display_limit: 修訂顯示數目之最大值
+  setting_mail_handler_enable_regex_delimiters: "開啟正規表示法"
+  setting_mail_handler_api_enabled: 開啟接收電子郵件的 WS
+  setting_mail_handler_api_key: 接收電子郵件的 WS API 金鑰
+  setting_sys_api_key: 檔案庫管理 WS API 金鑰
+  setting_sequential_project_identifiers: 產生專案識別碼
+  setting_gravatar_enabled: 使用 Gravatar 使用者圖示
+  setting_gravatar_default: 預設 Gravatar 圖片
+  setting_diff_max_lines_displayed: 差異顯示行數上限
+  setting_file_max_size_displayed: 在行內顯示的文字檔大小上限
+  setting_repository_log_display_limit: 在檔案記錄顯示的修訂數上限
   setting_openid: 允許使用 OpenID 登入與註冊
   setting_password_max_age: 必須在多少天後變更密碼
   setting_password_min_length: 密碼最小長度
   setting_lost_password: 允許使用電子郵件重新設定密碼
-  setting_new_project_user_role_id: 管理者以外之使用者新增專案時，將被分配的身份
+  setting_new_project_user_role_id: 非管理使用者建立專案時授予的身份
   setting_default_projects_modules: 新專案預設開啟的模組
   setting_issue_done_ratio: 計算問題完成率之方式
   setting_issue_done_ratio_issue_field: 使用問題完成率欄位
   setting_issue_done_ratio_issue_status: 使用問題狀態
   setting_start_of_week: 週的第一天
-  setting_rest_api_enabled: 開啟 REST 網路服務技術 (Web Service) 
+  setting_rest_api_enabled: 開啟 REST Web Service 
   setting_cache_formatted_text: 快取已格式化文字
   setting_default_notification_option: 預設通知選項
   setting_commit_logtime_enabled: 開啟時間記錄
-  setting_commit_logtime_activity_id: 時間記錄對應的活動
-  setting_gantt_items_limit: 甘特圖中項目顯示數量的最大值
-  setting_issue_group_assignment: 允許問題被分配至群組
-  setting_default_issue_start_date_to_creation_date: 設定新問題的開始日期為今天的日期
+  setting_commit_logtime_activity_id: 可做時間記錄的活動
+  setting_gantt_items_limit: 甘特圖項目數量顯示上限
+  setting_issue_group_assignment: 允許問題被分配給群組
+  setting_default_issue_start_date_to_creation_date: 新問題使用目前日期做為開始日期
   setting_commit_cross_project_ref: 允許關聯並修正其他專案的問題
-  setting_unsubscribe: 允許使用者取消註冊 (刪除帳戶) 
-  setting_session_lifetime: 工作階段存留時間最大值
+  setting_unsubscribe: 允許使用者刪除自己的帳號
+  setting_session_lifetime: 工作階段存留時間上限
   setting_session_timeout: 工作階段無活動逾時時間
   setting_thumbnails_enabled: 顯示附加檔案的縮圖
-  setting_thumbnails_size: "縮圖大小 (單位: 像素 pixels)"
+  setting_thumbnails_size: "縮圖大小 (像素)"
   setting_non_working_week_days: 非工作日
   setting_jsonp_enabled: 開啟 JSONP 支援
-  setting_default_projects_tracker_ids: 新專案預設使用的問題類型
+  setting_default_projects_tracker_ids: 新專案預設使用的類型
   setting_mail_handler_excluded_filenames: 移除符合下列名稱的附件
   setting_force_default_language_for_anonymous: 強迫匿名使用者使用預設語言
   setting_force_default_language_for_loggedin: 強迫已登入使用者使用預設語言
@@ -565,8 +565,8 @@
   permission_manage_repository: 管理檔案庫
   permission_browse_repository: 瀏覽檔案庫
   permission_view_changesets: 檢視變更集
-  permission_commit_access: 存取提交
-  permission_manage_boards: 管理討論版
+  permission_commit_access: 提交存取權
+  permission_manage_boards: 管理討論區
   permission_view_messages: 檢視訊息
   permission_add_messages: 新增訊息
   permission_edit_messages: 編輯訊息
@@ -626,10 +626,10 @@
   label_member: 成員
   label_member_new: 新增成員
   label_member_plural: 成員
-  label_tracker: 問題類型
-  label_tracker_plural: 問題類型
-  label_tracker_all: 所有問題類型
-  label_tracker_new: 新增問題類型
+  label_tracker: 類型
+  label_tracker_plural: 類型
+  label_tracker_all: 所有類型
+  label_tracker_new: 新增類型
   label_workflow: 作業流程
   label_issue_status: 問題狀態
   label_issue_status_plural: 問題狀態
@@ -651,7 +651,7 @@
   label_password_required: 確認您的密碼後繼續
   label_home: 首頁
   label_my_page: 我的頁面
-  label_my_account: 我的帳戶
+  label_my_account: 我的帳號
   label_my_projects: 我的專案
   label_administration: 管理
   label_login: 登入
@@ -666,7 +666,7 @@
   label_overall_activity: 整體活動
   label_user_activity: "%{value} 的活動"
   label_new: 新增
-  label_logged_as: 已登入為
+  label_logged_as: 已登入帳號
   label_environment: 環境
   label_authentication: 認證
   label_auth_source: 認證模式
@@ -818,7 +818,7 @@
   label_latest_revision_plural: 最新的修訂
   label_view_revisions: 檢視修訂
   label_view_all_revisions: 檢視所有的修訂
-  label_max_size: 最大長度
+  label_max_size: 大小限制
   label_sort_highest: 移動至開頭
   label_sort_higher: 往上移動
   label_sort_lower: 往下移動
@@ -859,7 +859,7 @@
   label_diff_inline: 行內
   label_diff_side_by_side: 並排
   label_options: 選項
-  label_copy_workflow_from: 自以下問題類型複製作業流程
+  label_copy_workflow_from: 自以下類型複製作業流程
   label_permissions_report: 權限報表
   label_watched_issues: 監視的問題
   label_related_issues: 相關的問題
@@ -880,9 +880,9 @@
   label_disabled: 關閉
   label_show_completed_versions: 顯示已完成的版本
   label_me: 我自己
-  label_board: 論壇
-  label_board_new: 新增論壇
-  label_board_plural: 論壇
+  label_board: 討論區
+  label_board_new: 新增討論區
+  label_board_plural: 討論區
   label_board_locked: 已鎖定
   label_board_sticky: 置頂
   label_topic_plural: 主題
@@ -891,7 +891,7 @@
   label_message_new: 新增訊息
   label_message_posted: 訊息已新增
   label_reply_plural: 回覆
-  label_send_information: 寄送帳戶資訊電子郵件給使用者
+  label_send_information: 寄送帳號資訊電子郵件給使用者
   label_year: 年
   label_month: 月
   label_week: 週
@@ -924,14 +924,14 @@
   label_user_mail_option_only_assigned: "只有我監視中或分配給我的問題"
   label_user_mail_option_only_owner: "只有我監視中或擁有者為我的問題"
   label_user_mail_no_self_notified: "我不想收到我自己所做的變更通知"
-  label_registration_activation_by_email: 透過電子郵件啟用帳戶
-  label_registration_manual_activation: 手動啟用帳戶
-  label_registration_automatic_activation: 自動啟用帳戶
+  label_registration_activation_by_email: 透過電子郵件啟用帳號
+  label_registration_manual_activation: 手動啟用帳號
+  label_registration_automatic_activation: 自動啟用帳號
   label_display_per_page: "每頁顯示: %{value} 筆"
   label_age: 年齡
   label_change_properties: 更改屬性
   label_general: 一般
-  label_scm: 版本控管系統
+  label_scm: SCM
   label_plugins: 外掛
   label_ldap_authentication: LDAP 認證
   label_downloads_abbr: 下載
@@ -940,7 +940,7 @@
   label_preferences: 偏好設定
   label_chronological_order: 以時間由遠至近排序
   label_reverse_chronological_order: 以時間由近至遠排序
-  label_incoming_emails: 收到的郵件
+  label_incoming_emails: 接收電子郵件
   label_generate_key: 產生金鑰
   label_issue_watchers: 監視者
   label_example: 範例
@@ -966,7 +966,7 @@
   label_copy_source: 來源
   label_copy_target: 目地
   label_copy_same_as_target: 與目地相同
-  label_display_used_statuses_only: 僅顯示此問題類型所使用之狀態
+  label_display_used_statuses_only: 僅顯示此類型所使用之狀態
   label_api_access_key: API 存取金鑰
   label_missing_api_access_key: 找不到 API 存取金鑰
   label_api_access_key_created_on: "API 存取金鑰建立於 %{value} 之前"
@@ -1001,20 +1001,20 @@
   label_attribute_of_author: "作者的 %{name}"
   label_attribute_of_assigned_to: "負責人的 %{name}"
   label_attribute_of_user: "使用者的 %{name}"
-  label_attribute_of_fixed_version: "版本的 %{name}"
+  label_attribute_of_fixed_version: "目標版本的 %{name}"
   label_attribute_of_object: "%{object_name}的 %{name}"
-  label_cross_project_descendants: 與子專案共用
-  label_cross_project_tree: 與專案樹共用
-  label_cross_project_hierarchy: 與專案階層架構共用
-  label_cross_project_system: 與全部的專案共用
+  label_cross_project_descendants: 與子專案
+  label_cross_project_tree: 與專案樹
+  label_cross_project_hierarchy: 與專案階層架構
+  label_cross_project_system: 與全部的專案
   label_gantt_progress_line: 進度線
   label_visibility_private: 僅我自己可見
   label_visibility_roles: 僅選取之身份可見
   label_visibility_public: 任何使用者均可見
   label_link: 連結
   label_only: 僅於
-  label_drop_down_list: 下拉式清單
-  label_checkboxes: 核取方塊
+  label_drop_down_list: 下拉式選單
+  label_checkboxes: 核選方塊
   label_radio_buttons: 選項按鈕
   label_link_values_to: 連結欄位值至此網址
   label_custom_field_select_type: 請選擇連結此自訂欄位的物件類型
@@ -1036,11 +1036,11 @@
   label_enable_notifications: 開啟通知
   label_disable_notifications: 關閉通知
   label_blank_value: 空白
-  label_parent_task_attributes: 父問題屬性
-  label_parent_task_attributes_derived: 從子任務計算導出
-  label_parent_task_attributes_independent: 與子任務無關
-  label_time_entries_visibility_all: 所有時間紀錄
-  label_time_entries_visibility_own: 使用者自己建立的時間紀錄
+  label_parent_task_attributes: 父任務屬性
+  label_parent_task_attributes_derived: 由子任務計算
+  label_parent_task_attributes_independent: 與子任務獨立
+  label_time_entries_visibility_all: 所有時間記錄
+  label_time_entries_visibility_own: 使用者自己建立的時間記錄
   label_member_management: 成員管理
   label_member_management_all_roles: 所有身份
   label_member_management_selected_roles_only: 僅限下列身份
@@ -1060,12 +1060,12 @@
   label_field_format_enumeration: 鍵/值 清單
   label_default_values_for_new_users: 新使用者使用之預設值
   label_relations: 關聯
-  label_new_project_issue_tab_enabled: 顯示「新增問題」標籤頁面
-  label_new_object_tab_enabled: 顯示 "+" 下拉功能表
+  label_new_project_issue_tab_enabled: 顯示「新增問題」頁籤
+  label_new_object_tab_enabled: 顯示 "+" 下拉式選單
   label_table_of_contents: 目錄
   label_font_default: 預設字型
   label_font_monospace: 等寬字型
-  label_font_proportional: 調和間距字型
+  label_font_proportional: 比例字型
   label_last_notes: 最後一則筆記
 
   button_login: 登入
@@ -1117,7 +1117,7 @@
   button_hide: 隱藏
   button_edit_section: 編輯此節
   button_export: 匯出
-  button_delete_my_account: 刪除我的帳戶
+  button_delete_my_account: 刪除我的帳號
   button_close: 關閉
   button_reopen: 重新開啟
   button_import: 匯入
@@ -1135,14 +1135,14 @@
   version_status_locked: 已鎖定
   version_status_closed: 已結束
 
-  field_active: 活動中
+  field_active: 使用中
 
   text_select_mail_notifications: 選擇欲寄送提醒通知郵件之動作
   text_regexp_info: eg. ^[A-Z0-9]+$
   text_min_max_length_info: 0 代表「不限制」
   text_project_destroy_confirmation: 您確定要刪除這個專案和其他相關資料？
   text_subprojects_destroy_warning: "下列子專案： %{value} 將一併被刪除。"
-  text_workflow_edit: 選擇身份與問題類型以設定其作業流程
+  text_workflow_edit: 選擇身份與類型以設定其作業流程
   text_are_you_sure: 確定執行？
   text_journal_changed: "%{label} 從 %{old} 變更為 %{new}"
   text_journal_changed_no_detail: "%{label} 已更新"
@@ -1152,11 +1152,11 @@
   text_tip_issue_begin_day: 今天開始的問題
   text_tip_issue_end_day: 今天截止的問題
   text_tip_issue_begin_end_day: 今天開始與截止的問題
-  text_project_identifier_info: '僅允許使用小寫英文字母 (a-z), 阿拉伯數字, 虛線與底線。<br />一旦儲存之後, 代碼便無法再次被更改。'
-  text_caracters_maximum: "最多 %{count} 個字元."
-  text_caracters_minimum: "長度必須大於 %{count} 個字元."
-  text_length_between: "長度必須介於 %{min} 至 %{max} 個字元之間."
-  text_tracker_no_workflow: 此問題類型尚未定義作業流程
+  text_project_identifier_info: '僅允許使用小寫英文字母 (a-z), 阿拉伯數字, 虛線與底線。<br />一旦儲存之後, 代號便無法再次被更改。'
+  text_caracters_maximum: "最多 %{count} 個字元。"
+  text_caracters_minimum: "長度必須大於 %{count} 個字元。"
+  text_length_between: "長度必須介於 %{min} 至 %{max} 個字元之間。"
+  text_tracker_no_workflow: 此類型尚未定義作業流程
   text_unallowed_characters: 不允許的字元
   text_comma_separated: 可輸入多個值 (須以逗號分隔) 。
   text_line_separated: 可輸入多個值 (須以換行符號分隔，即每列只能輸入一個值) 。
@@ -1168,13 +1168,13 @@
   text_issue_category_destroy_assignments: 移除這些問題的分類
   text_issue_category_reassign_to: 重新分配這些問題至其它分類
   text_user_mail_option: "對於那些未被選擇的專案，將只會接收到您正在監視中，或是參與中的問題通知。 (「參與中的問題」包含您建立的或是分配給您的問題) "
-  text_no_configuration_data: "身份、問題類型、問題狀態與流程尚未被設定完成。\n強烈建議您先載入預設的組態。將預設組態載入之後，您可再變更其中之值。"
+  text_no_configuration_data: "身份、類型、問題狀態與流程尚未被設定完成。\n強烈建議您先載入預設的組態。將預設組態載入之後，您可再變更其中之值。"
   text_load_default_configuration: 載入預設組態
-  text_status_changed_by_changeset: "已套用至變更集 %{value}."
-  text_time_logged_by_changeset: "紀錄於變更集 %{value}."
+  text_status_changed_by_changeset: "已套用至變更集 %{value}。"
+  text_time_logged_by_changeset: "記錄於變更集 %{value}。"
   text_issues_destroy_confirmation: '確定刪除已選擇的問題？'
   text_issues_destroy_descendants_confirmation: "這麼做將會一併刪除 %{count} 子任務。"
-  text_time_entries_destroy_confirmation: 您確定要刪除所選擇的時間紀錄？
+  text_time_entries_destroy_confirmation: 您確定要刪除所選擇的時間記錄？
   text_select_project_modules: '選擇此專案可使用之模組：'
   text_default_administrator_account_changed: 已變更預設管理員帳號內容
   text_file_repository_writable: 可寫入附加檔案目錄
@@ -1189,7 +1189,7 @@
   text_enumeration_destroy_question: "目前有 %{count} 個物件使用此欄位項目。"
   text_enumeration_category_reassign_to: '重新設定其欄位項目為：'
   text_email_delivery_not_configured: "您尚未設定電子郵件傳送方式，因此提醒選項已被關閉。\n請在 config/configuration.yml 中設定 SMTP 之後，重新啟動 Redmine，以開啟電子郵件提醒選項。"
-  text_repository_usernames_mapping: "選擇或更新 Redmine 使用者與檔案庫紀錄使用者之對應關係。\n檔案庫中之使用者帳號或電子郵件信箱，與 Redmine 設定相同者，將自動產生對應關係。"
+  text_repository_usernames_mapping: "選擇或更新 Redmine 使用者與檔案庫記錄使用者之對應關係。\n檔案庫中之使用者帳號或電子郵件信箱，與 Redmine 設定相同者，將自動產生對應關係。"
   text_diff_truncated: '... 這份差異已被截短以符合顯示行數之最大值'
   text_custom_field_possible_values_info: '一列輸入一個值'
   text_wiki_page_destroy_question: "此頁面包含 %{descendants} 個子頁面及延伸頁面。 請選擇您想要的動作?"
@@ -1204,14 +1204,14 @@
   text_subversion_repository_note: "範例: file:///, http://, https://, svn://, svn+[tunnelscheme]://"
   text_git_repository_note: 檔案庫是本機的空(bare)目錄 (即： /gitrepo, c:\gitrepo)
   text_mercurial_repository_note: 本機檔案庫 (即： /hgrepo, c:\hgrepo)
-  text_scm_command: 命令
+  text_scm_command: 指令
   text_scm_command_version: 版本
   text_scm_config: 您可以在 config/configuration.yml 中設定 SCM 命令。請在編輯該檔案之後重新啟動 Redmine 應用程式。
   text_scm_command_not_available: SCM 命令無法使用。請檢查管理面板中的設定。
   text_issue_conflict_resolution_overwrite: "直接套用我的變更 (先前的筆記將會被保留，但是某些變更可能會被複寫)"
   text_issue_conflict_resolution_add_notes: "新增我的筆記並捨棄我其他的變更"
   text_issue_conflict_resolution_cancel: "捨棄我全部的變更並重新顯示 %{link}"
-  text_account_destroy_confirmation: "您確定要繼續這個動作嗎？\n您的帳戶將會被永久刪除，且無法被重新啟用。"
+  text_account_destroy_confirmation: "您確定要繼續這個動作嗎？\n您的帳號將會被永久刪除，且無法被重新啟用。"
   text_session_expiration_settings: "警告：變更這些設定將會導致包含您在內的所有工作階段過期。"
   text_project_closed: 此專案已被關閉，僅供唯讀使用。
   text_turning_multiple_off: "若您關閉多重值設定，重複的值將會被移除，以使每個項目僅保留一個值。"
@@ -1219,7 +1219,7 @@
   default_role_manager: 管理人員
   default_role_developer: 開發人員
   default_role_reporter: 回報人員
-  default_tracker_bug: 臭蟲
+  default_tracker_bug: 問題
   default_tracker_feature: 功能
   default_tracker_support: 支援
   default_issue_status_new: 新建立
@@ -1256,4 +1256,4 @@
   description_all_columns: 所有欄位
   description_issue_category_reassign: 選擇問題分類
   description_wiki_subpages_reassign: 選擇新的父頁面
-  text_repository_identifier_info: '僅允許使用小寫英文字母 (a-z), 阿拉伯數字, 虛線與底線。<br />一旦儲存之後, 代碼便無法再次被更改。'
+  text_repository_identifier_info: '僅允許使用小寫英文字母 (a-z), 阿拉伯數字, 虛線與底線。<br />一旦儲存之後, 代號便無法再次被更改。'

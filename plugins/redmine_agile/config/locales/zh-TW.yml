@@ -9,7 +9,7 @@
   label_agile_board_plural: 敏捷看板
   label_agile_board_thumbnails: 縮圖
   label_agile_board_more_issues: 更多問題
-  error_agile_status_transition: 不能更改問題狀態
+  error_agile_status_transition: 無法變更問題狀態
   label_agile_board_new: 新敏捷看板
   label_agile_board_edit: 編輯敏捷看板
   label_agile_my_boards: 我的敏捷看板
@@ -22,7 +22,7 @@
   #1.1.0
   label_agile_board_default_fields: 預設卡片區域
   label_agile_charts_issues_burndown: 問題燃盡圖
-  label_agile_charts_work_burndown: 時數燃盡圖
+  label_agile_charts_work_burndown_hours: 時數燃盡圖
   label_agile_charts_work_burndown_sp: 工作點數燃盡圖
   label_agile_charts_number_of_hours: 時數
   label_agile_charts_number_of_issues: 問題數
@@ -44,7 +44,7 @@
   label_agile_charts_burnup: 問題燃盡圖
   label_agile_charts_number_of_days: 天數
   label_agile_too_many_items: "該圖表因超出可顯示的最大項目數而不能被創建(%{max})"
-  label_agile_time_reports_items_limit: 時間條目基于圖表的問題限制
+  label_agile_time_reports_items_limit: 以時間為基礎的圖表問題限制
   label_agile_total_work_remaining: 總計
   label_agile_default_chart: 版本預設圖表
 
@@ -58,18 +58,19 @@
   permission_manage_agile_verions: 管理版本規劃
   label_agile_version_planning: 版本規劃
   error_agile_version_transition: 不能更改問題版本
-  label_agile_tracker_colors: 跟蹤器色彩
+  label_agile_tracker_colors: 類型色彩
   label_agile_issue_priority_colors: 問題優先級色彩
   label_agile_color_based_on: 色彩
   label_agile_color_no_colors: 無色彩
   label_agile_manage_colors: 管理色彩
   label_agile_fullscreen: 全螢幕
   label_agile_no_version_issues: 無版本項目
-  label_agile_charts_work_burnup: 工作燃燒
-  label_agile_completed: 完成
+  label_agile_charts_work_burnup: 小時燃盡
+  label_agile_charts_work_burnup_sp: 故數點數燃盡
+  label_agile_completed: 已完成
   label_agile_exclude_weekends: 從理想工作中排除周末時間
   label_agile_board_truncated: "看板被縮短是由于超出最大顯示項目數 (%{max})"
-  label_agile_board_items_limit: 敏捷看板項目限制
+  label_agile_board_items_limit: 敏捷看板項目上限
   label_agile_swimlanes: 泳道
   label_agile_minimize_closed: 最小化關閉的問題
   label_agile_fields: 卡片區域
@@ -79,7 +80,7 @@
   text_agile_move_not_possible: 該步驟不可行
 
   #1.3.8
-  label_agile_parent_issue_tracker_id: 本追蹤
+  label_agile_parent_issue_tracker_id: 父類型
   label_agile_sub_issues: 子問題
   label_agile_color_green: 綠色
   label_agile_color_blue: 藍色
@@ -91,3 +92,47 @@
   label_agile_color_purple: 紫色
   label_agile_color_gray: 灰色
   label_agile_has_sub_issues: 子問題
+  label_agile_light_free_version: Agile Light 免費版本
+  label_agile_link_to_pro: 升級到 PRO 版本
+  label_agile_link_to_pro_demo: PRO 版本現場展示
+  label_agile_link_to_more_plugins: 尋找更多 RedmineUP 外掛
+  label_agile_button_agree: 同意
+  label_agile_license: RedmineUP 授權條款
+  label_agile_saving_boards: 儲存看板
+  label_agile_horizontal_swim_lines: 水平泳道
+  label_agile_board_sub_columns: 看板子欄位
+  label_agile_additional_agile_charts: 額外的敏捷圖
+  label_agile_coloured_issue_cards: 上色的問題卡片
+  label_agile_4_more_features: 4 項額外功能...
+  label_agile_upgrade_to_pro: 升級到 PRO 版來使用這項功能
+
+  label_agile_day_in_state:  In status
+
+  #1.3.10
+  label_agile_hide_closed_issues_data: 隱藏關閉的問題資料
+  project_module_agile: Agile
+
+  #1.3.13
+  label_agile_last_comment: 最後評論
+
+  #1.4.0
+  label_agile_esitmate_units: 估計的單位
+  label_agile_trackers_for_sp: 類型的故事點數
+  label_agile_story_points: 故事點數
+  field_story_points: 故事點數
+  label_agile_charts_number_of_story_points: 故事點數數量
+  label_agile_board_columns: 看板欄位數
+  lable_agile_wip_limit_exceeded: 進行中的工作超出限制
+  label_agile_wip_limit: 進行中的工作限制
+  label_agile_add_new_issue: '+ 加入新問題'
+  label_agile_allow_create_cards: 卡片建立
+  label_agile_auto_assign_on_move: 自動於移動時分配
+  text_agile_create_issue_error: 建立工作時發生錯誤
+  label_agile_inline_comment: 行內評論
+  label_agile_hours: 小時
+  field_color: 色彩
+
+  field_duration: 期間
+
+  field_closed_on_trendline: 關閉的趨勢線
+  field_created_on_trendline: 建立的趨勢線

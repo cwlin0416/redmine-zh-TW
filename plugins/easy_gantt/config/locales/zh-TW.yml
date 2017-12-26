@@ -118,12 +118,12 @@ zh-TW:
   label_start_to_finish: 開始到結束
   label_start_to_start: 開始到開始
   link_easy_gantt_plugin: https://www.easyredmine.com/easy-gantt-upgrade-to-pro
-  permission_edit_easy_gantt: Edit Easy Gantt & Resource Management on a project
-  permission_edit_global_easy_gantt: Edit global Easy Gantt & Resource Management
-  permission_edit_personal_easy_gantt: Edit personal Easy Gantt & Resource Management
-  permission_view_easy_gantt: View Easy Gantt & Resource Management on a project
-  permission_view_global_easy_gantt: View global Easy Gantt & Resource Management
-  permission_view_personal_easy_gantt: View personal Easy Gantt & Resource Management
+  permission_edit_easy_gantt: 編輯專案中的 Easy Gantt 與資源管理
+  permission_edit_global_easy_gantt: 編輯全域的 Easy Gantt 與資源管理
+  permission_edit_personal_easy_gantt: 編輯個人的 Easy Gantt 與資源管理
+  permission_view_easy_gantt: 檢視專案中的 Easy Gantt 與資源管理
+  permission_view_global_easy_gantt: 檢視全域的 Easy Gantt 與資源管理
+  permission_view_personal_easy_gantt: 檢視個人的 Easy Gantt 與資源管理
   project_default_page:
     easy_gantt: Easy Gantt
   project_module_easy_gantt: Easy Gantt
